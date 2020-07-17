@@ -11,6 +11,10 @@ export class Provider extends Component {
   }
 
   render() {
+    const value = {
+      data: this.data,
+    };
+    
     return (
       <Context.Provider>
         {this.props.children}
