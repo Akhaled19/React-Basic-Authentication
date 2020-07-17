@@ -72,7 +72,19 @@ export default class UserSignUp extends Component {
   }
 
   submit = () => {
+    const {context} = this.props;
+    const {
+      name,
+      username,
+      password
+    } = this.state;
 
+    //new payload
+    const user = {
+      name,
+      user,
+      password
+    };
   }
 
   cancel = () => {
