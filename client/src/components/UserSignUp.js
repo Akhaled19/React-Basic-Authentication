@@ -82,11 +82,11 @@ export default class UserSignUp extends Component {
     //new payload
     const user = {
       name,
-      user,
+      username,
       password
     };
 
-    context.data.creatUser(user)
+    context.data.createUser(user)
     .then( errors => {
       if(errors.lenght) {
         this.setState( {errors} )
@@ -101,6 +101,6 @@ export default class UserSignUp extends Component {
   }
 
   cancel = () => {
-
+    this.props.history.push('/'); //redirect to home page
   }
 }
