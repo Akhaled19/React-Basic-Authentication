@@ -13,6 +13,9 @@ export class Provider extends Component {
   render() {
     const value = {
       data: this.data,
+      actions: {
+        signIn: this.signIn,
+      },
     };
     
     return (
