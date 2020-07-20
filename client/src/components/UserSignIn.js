@@ -67,7 +67,7 @@ export default class UserSignIn extends Component {
     const {username, password} = this.state;
     context.actions.signIn(username, password)
     .then( user => {
-      if(user === null || 400) {
+      if(user === null) {
         this.setState(() => {
           return {errors: ['sign-in was unsucessful'] };
         });

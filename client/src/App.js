@@ -17,11 +17,12 @@ import Authenticated from './components/Authenticated';
 //connect the UserSignUp to context 
 const UserSignUpWithContext = withContext(UserSignUp);
 const UserSignInWithContext = withContext(UserSignIn);
+const HeaderWithContext = withContext(Header);
 
 export default () => (
   <Router>
     <div>
-      <Header />
+      <HeaderWithContext />
 
       <Switch>
         <Route exact path="/" component={Public} />
