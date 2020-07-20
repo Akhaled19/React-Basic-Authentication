@@ -76,6 +76,10 @@ export default class UserSignIn extends Component {
         this.props.history.push('/authenticated');
         console.log(`SUCESS: ${username} is now signed in!`);
       }
+    })
+    .catch( err => {
+      console.log(err);
+      this.props.history.push('/error');
     });
 
 
