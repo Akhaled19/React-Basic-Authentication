@@ -20,6 +20,7 @@ export class Provider extends Component {
       data: this.data,
       actions: {
         signIn: this.signIn,
+        signOut: this.signOut,
       },
     };
     
@@ -44,7 +45,7 @@ export class Provider extends Component {
   }
 
   signOut = () => {
-
+    this.setState({authenticatedUser: null})
   }
 }
 
