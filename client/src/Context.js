@@ -8,9 +8,6 @@ export class Provider extends Component {
   constructor() {
     super();
     this.data = new Data();
-    this.state = {
-      authenticatedUser: null, 
-    }
   }
 
   render() {
@@ -45,7 +42,7 @@ export class Provider extends Component {
   }
 
   signOut = () => {
-    this.setState({authenticatedUser: null})
+    this.setState({authenticatedUser: null});
   }
 }
 
